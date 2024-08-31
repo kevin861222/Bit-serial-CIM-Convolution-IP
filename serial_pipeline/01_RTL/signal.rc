@@ -1,0 +1,143 @@
+Magic 271485
+Revision Verdi_P-2019.06
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 72 64 1848 1012 169 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/RAID2/COURSE/dic/dic107/DICHW5/clk_gating/01_RTL/Convolution.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 2476.641766 3340.281715
+cursor 2775.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 19
+; marker line index
+markerPos 29
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/RAID2/COURSE/dic/dic107/DICHW5/clk_gating/01_RTL/Convolution.fsdb"
+addSignal -h 15 /TESTBED/u_Convolution/ConvState
+addSignal -h 15 -holdScope EN_IN1
+addSignal -h 15 -holdScope EN_IN2
+addSignal -h 15 -holdScope EN_IN3
+addSignal -h 15 -holdScope EN_IN4
+addSignal -h 15 -holdScope EN_IN5
+addSignal -h 15 -holdScope EN_IN6
+addSignal -h 15 -holdScope EN_IN7
+addSignal -h 15 -holdScope EN_IN8
+addSignal -h 15 -holdScope EN_IN9
+addSignal -h 15 -holdScope In_IFM_1[7:0]
+addSignal -h 15 -holdScope In_IFM_1_buf[7:0]
+addSignal -h 15 -holdScope In_IFM_2[7:0]
+addSignal -h 15 -holdScope In_IFM_2_buf[7:0]
+addSignal -h 15 -holdScope In_IFM_3[7:0]
+addSignal -h 15 -holdScope In_IFM_3_buf[7:0]
+addSignal -h 15 -holdScope In_IFM_4[7:0]
+addSignal -h 15 -holdScope In_IFM_4_buf[7:0]
+addSignal -h 15 -holdScope In_IFM_5[7:0]
+addSignal -h 15 -holdScope In_IFM_5_buf[7:0]
+addSignal -h 15 -holdScope In_IFM_6[7:0]
+addSignal -h 15 -holdScope In_IFM_6_buf[7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope In_IFM_7[7:0]
+addSignal -h 15 -holdScope In_IFM_7_buf[7:0]
+addSignal -h 15 -holdScope In_IFM_8[7:0]
+addSignal -h 15 -holdScope In_IFM_8_buf[7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope In_IFM_9[7:0]
+addSignal -h 15 -holdScope In_IFM_9_buf[7:0]
+addSignal -h 15 -holdScope clk
+addSignal -h 15 -holdScope In_Weight_1[7:0]
+addSignal -h 15 -holdScope In_Weight_1_buf[7:0]
+addSignal -h 15 -holdScope In_Weight_2[7:0]
+addSignal -h 15 -holdScope In_Weight_2_buf[7:0]
+addSignal -h 15 -holdScope In_Weight_3[7:0]
+addSignal -h 15 -holdScope In_Weight_3_buf[7:0]
+addSignal -h 15 -holdScope In_Weight_4[7:0]
+addSignal -h 15 -holdScope In_Weight_4_buf[7:0]
+addSignal -h 15 -holdScope In_Weight_5[7:0]
+addSignal -h 15 -holdScope In_Weight_5_buf[7:0]
+addSignal -h 15 -holdScope In_Weight_6[7:0]
+addSignal -h 15 -holdScope In_Weight_6_buf[7:0]
+addSignal -h 15 -holdScope In_Weight_7[7:0]
+addSignal -h 15 -holdScope In_Weight_7_buf[7:0]
+addSignal -h 15 -holdScope In_Weight_8[7:0]
+addSignal -h 15 -holdScope In_Weight_8_buf[7:0]
+addSignal -h 15 -holdScope In_Weight_9[7:0]
+addSignal -h 15 -holdScope In_Weight_9_buf[7:0]
+addSignal -h 15 -holdScope NextState
+addSignal -h 15 -UNSIGNED -UDEC -holdScope Out_OFM[20:0]
+addSignal -h 15 -holdScope WhetherCG_IN1
+addSignal -h 15 -holdScope WhetherCG_IN2
+addSignal -h 15 -holdScope WhetherCG_IN3
+addSignal -h 15 -holdScope WhetherCG_IN4
+addSignal -h 15 -holdScope WhetherCG_IN5
+addSignal -h 15 -holdScope WhetherCG_IN6
+addSignal -h 15 -holdScope WhetherCG_IN7
+addSignal -h 15 -holdScope WhetherCG_IN8
+addSignal -h 15 -holdScope WhetherCG_IN9
+addSignal -h 15 -holdScope clk
+addSignal -h 15 -holdScope clk_gate_IN1
+addSignal -h 15 -holdScope clk_gate_IN2
+addSignal -h 15 -holdScope clk_gate_IN3
+addSignal -h 15 -holdScope clk_gate_IN4
+addSignal -h 15 -holdScope clk_gate_IN5
+addSignal -h 15 -holdScope clk_gate_IN6
+addSignal -h 15 -holdScope clk_gate_IN7
+addSignal -h 15 -holdScope clk_gate_IN8
+addSignal -h 15 -holdScope clk_gate_IN9
+addSignal -h 15 -holdScope in_valid
+addSignal -h 15 -UNSIGNED -UDEC -holdScope out_count[4:0]
+addSignal -h 15 -holdScope out_valid
+addSignal -h 15 -holdScope rst_n
+addSignal -h 15 -holdScope weight_valid
+addGroup "G2"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/RAID2/COURSE/dic/dic107/DICHW5/clk_gating/01_RTL/Convolution.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/ASYNC_DFFHx1_ASAP7_75t_R"
+"/TESTBED"
+
+SCOPE_LIST_BEGIN
+"/ASYNC_DFFHx1_ASAP7_75t_R"
+"/TESTBED"
+"/TESTBED/u_Convolution"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+
