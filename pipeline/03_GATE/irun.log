@@ -1,0 +1,373 @@
+irun(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s084: Started on Jan 19, 2024 at 16:03:13 CST
+irun
+	../00_TESTBED/TESTBED.v
+	-define GATE
+	-debug
+	-v asap7sc7p5t_SIMPLE_RVT_TT_08302018.v
+	asap7sc7p5t_SEQ_RVT_TT_08302018.v
+	asap7sc7p5t_INVBUF_RVT_TT_08302018.v
+	-nontcglitch
+	-loadpli1 debpli:novas_pli_boot
+Recompiling... reason: file '../02_SYN/Netlist/Convolution_SYN.v' is newer than expected.
+	expected: Fri Jan 19 16:01:40 2024
+	actual:   Fri Jan 19 16:03:09 2024
+file: ../00_TESTBED/TESTBED.v
+	module worklib.Convolution:v
+		errors: 0, warnings: 0
+	module worklib.Convolution_DW01_add_41:v
+		errors: 0, warnings: 0
+	module worklib.Convolution_DW01_add_36:v
+		errors: 0, warnings: 0
+	module worklib.Convolution_DW01_add_39:v
+		errors: 0, warnings: 0
+	module worklib.Convolution_DW01_add_38:v
+		errors: 0, warnings: 0
+	module worklib.Convolution_DW01_add_0:v
+		errors: 0, warnings: 0
+	module worklib.Convolution_DW01_add_14:v
+		errors: 0, warnings: 0
+file: asap7sc7p5t_SIMPLE_RVT_TT_08302018.v
+	module asap7sc7p5t_SIMPLE_RVT_TT_08302018.AND3x1_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module asap7sc7p5t_SIMPLE_RVT_TT_08302018.NAND2xp67_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module asap7sc7p5t_SIMPLE_RVT_TT_08302018.OR3x1_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module asap7sc7p5t_SIMPLE_RVT_TT_08302018.XOR2x2_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+		Caching library 'asap7sc7p5t_SIMPLE_RVT_TT_08302018' ....... Done
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+  Convolution_DW01_add_14 add_0_root_add_0_root_add_87_6 ( .A({n384, 
+                                                       |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,124|55): 1 output port was not connected:
+ncelab: (../02_SYN/Netlist/Convolution_SYN.v,996): CO
+
+  Convolution_DW01_add_0 add_0_root_add_0_root_add_89_7 ( .A({n384, N168, N167, 
+                                                      |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,132|54): 1 output port was not connected:
+ncelab: (../02_SYN/Netlist/Convolution_SYN.v,968): CO
+
+  Convolution_DW01_add_38 add_93_4 ( .A({N182, N183, N184, N185, N186, N187, 
+                                 |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,147|33): 1 output port was not connected:
+ncelab: (../02_SYN/Netlist/Convolution_SYN.v,826): CO
+
+  Convolution_DW01_add_39 add_93 ( .A({n384, stage2[6:0]}), .B({n384, 
+                               |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,152|31): 1 output port was not connected:
+ncelab: (../02_SYN/Netlist/Convolution_SYN.v,753): CO
+
+  Convolution_DW01_add_36 add_93_2 ( .A({n384, n384, stage2[19:14]}), .B({n384, 
+                                 |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,155|33): 1 output port was not connected:
+ncelab: (../02_SYN/Netlist/Convolution_SYN.v,681): CO
+
+  Convolution_DW01_add_41 add_93_3 ( .A({n384, N202, N201, N200, N199, N198, 
+                                 |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,158|33): 1 output port was not connected:
+ncelab: (../02_SYN/Netlist/Convolution_SYN.v,597): CO
+
+  FAx1_ASAP7_75t_R U185 ( .A(In_IFM[1]), .B(n305), .CI(n308), .SN(n149) );
+                      |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,315|22): 1 output port was not connected:
+ncelab: (./asap7sc7p5t_SIMPLE_RVT_TT_08302018.v,199): CON
+
+  FAx1_ASAP7_75t_R U195 ( .A(n306), .B(n297), .CI(n103), .SN(n98) );
+                      |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,325|22): 1 output port was not connected:
+ncelab: (./asap7sc7p5t_SIMPLE_RVT_TT_08302018.v,199): CON
+
+  FAx1_ASAP7_75t_R U197 ( .A(n301), .B(n294), .CI(n304), .SN(n139) );
+                      |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,327|22): 1 output port was not connected:
+ncelab: (./asap7sc7p5t_SIMPLE_RVT_TT_08302018.v,199): CON
+
+  FAx1_ASAP7_75t_R U203 ( .A(n307), .B(n298), .CI(n107), .SN(n145) );
+                      |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,333|22): 1 output port was not connected:
+ncelab: (./asap7sc7p5t_SIMPLE_RVT_TT_08302018.v,199): CON
+
+  FAx1_ASAP7_75t_R U205 ( .A(n302), .B(n295), .CI(n136), .SN(n131) );
+                      |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,335|22): 1 output port was not connected:
+ncelab: (./asap7sc7p5t_SIMPLE_RVT_TT_08302018.v,199): CON
+
+  FAx1_ASAP7_75t_R U220 ( .A(n303), .B(n296), .CI(n129), .SN(n121) );
+                      |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,350|22): 1 output port was not connected:
+ncelab: (./asap7sc7p5t_SIMPLE_RVT_TT_08302018.v,199): CON
+
+  FAx1_ASAP7_75t_R U231 ( .A(n303), .B(n296), .CI(n129), .SN(n135) );
+                      |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,361|22): 1 output port was not connected:
+ncelab: (./asap7sc7p5t_SIMPLE_RVT_TT_08302018.v,199): CON
+
+  FAx1_ASAP7_75t_R U234 ( .A(n135), .B(n134), .CI(n133), .SN(n355) );
+                      |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,364|22): 1 output port was not connected:
+ncelab: (./asap7sc7p5t_SIMPLE_RVT_TT_08302018.v,199): CON
+
+  FAx1_ASAP7_75t_R U236 ( .A(n302), .B(n295), .CI(n137), .SN(n144) );
+                      |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,366|22): 1 output port was not connected:
+ncelab: (./asap7sc7p5t_SIMPLE_RVT_TT_08302018.v,199): CON
+
+  FAx1_ASAP7_75t_R U241 ( .A(n145), .B(n144), .CI(n143), .SN(n356) );
+                      |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,371|22): 1 output port was not connected:
+ncelab: (./asap7sc7p5t_SIMPLE_RVT_TT_08302018.v,199): CON
+
+  FAx1_ASAP7_75t_R U242 ( .A(n98), .B(n146), .CI(n151), .SN(n357) );
+                      |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,372|22): 1 output port was not connected:
+ncelab: (./asap7sc7p5t_SIMPLE_RVT_TT_08302018.v,199): CON
+
+  FAx1_ASAP7_75t_R U265 ( .A(n313), .B(In_IFM[10]), .CI(n167), .SN(n168) );
+                      |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,397|22): 1 output port was not connected:
+ncelab: (./asap7sc7p5t_SIMPLE_RVT_TT_08302018.v,199): CON
+
+  FAx1_ASAP7_75t_R U268 ( .A(In_IFM[10]), .B(n312), .CI(n169), .SN(
+                      |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,401|22): 1 output port was not connected:
+ncelab: (./asap7sc7p5t_SIMPLE_RVT_TT_08302018.v,199): CON
+
+  FAx1_ASAP7_75t_R U283 ( .A(n311), .B(n317), .CI(n181), .SN(N78) );
+                      |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,418|22): 1 output port was not connected:
+ncelab: (./asap7sc7p5t_SIMPLE_RVT_TT_08302018.v,199): CON
+
+  FAx1_ASAP7_75t_R U285 ( .A(In_IFM[13]), .B(n310), .CI(n182), .SN(N77) );
+                      |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,420|22): 1 output port was not connected:
+ncelab: (./asap7sc7p5t_SIMPLE_RVT_TT_08302018.v,199): CON
+
+  FAx1_ASAP7_75t_R U304 ( .A(In_IFM[19]), .B(In_IFM[21]), .CI(n199), .SN(n212)
+                      |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,440|22): 1 output port was not connected:
+ncelab: (./asap7sc7p5t_SIMPLE_RVT_TT_08302018.v,199): CON
+
+  FAx1_ASAP7_75t_R U307 ( .A(In_IFM[20]), .B(n323), .CI(n328), .SN(n190) );
+                      |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,444|22): 1 output port was not connected:
+ncelab: (./asap7sc7p5t_SIMPLE_RVT_TT_08302018.v,199): CON
+
+  FAx1_ASAP7_75t_R U322 ( .A(In_IFM[21]), .B(In_IFM[20]), .CI(n62), .SN(n219)
+                      |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,459|22): 1 output port was not connected:
+ncelab: (./asap7sc7p5t_SIMPLE_RVT_TT_08302018.v,199): CON
+
+  FAx1_ASAP7_75t_R U333 ( .A(n209), .B(n201), .CI(n208), .SN(n368) );
+                      |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,471|22): 1 output port was not connected:
+ncelab: (./asap7sc7p5t_SIMPLE_RVT_TT_08302018.v,199): CON
+
+  FAx1_ASAP7_75t_R U339 ( .A(n218), .B(n217), .CI(n216), .SN(n369) );
+                      |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,477|22): 1 output port was not connected:
+ncelab: (./asap7sc7p5t_SIMPLE_RVT_TT_08302018.v,199): CON
+
+  FAx1_ASAP7_75t_R U340 ( .A(n221), .B(n220), .CI(n219), .SN(n370) );
+                      |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,478|22): 1 output port was not connected:
+ncelab: (./asap7sc7p5t_SIMPLE_RVT_TT_08302018.v,199): CON
+
+  FAx1_ASAP7_75t_R U341 ( .A(n223), .B(n222), .CI(n228), .SN(n371) );
+                      |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,479|22): 1 output port was not connected:
+ncelab: (./asap7sc7p5t_SIMPLE_RVT_TT_08302018.v,199): CON
+
+  FAx1_ASAP7_75t_R U358 ( .A(n338), .B(n341), .CI(n238), .SN(N167) );
+                      |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,496|22): 1 output port was not connected:
+ncelab: (./asap7sc7p5t_SIMPLE_RVT_TT_08302018.v,199): CON
+
+  FAx1_ASAP7_75t_R U359 ( .A(n337), .B(n340), .CI(n239), .SN(N166) );
+                      |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,497|22): 1 output port was not connected:
+ncelab: (./asap7sc7p5t_SIMPLE_RVT_TT_08302018.v,199): CON
+
+  FAx1_ASAP7_75t_R U360 ( .A(In_IFM[26]), .B(n339), .CI(n240), .SN(n241) );
+                      |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,498|22): 1 output port was not connected:
+ncelab: (./asap7sc7p5t_SIMPLE_RVT_TT_08302018.v,199): CON
+
+  FAx1_ASAP7_75t_R U362 ( .A(In_IFM[24]), .B(In_IFM[27]), .CI(n342), .SN(N164)
+                      |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,500|22): 1 output port was not connected:
+ncelab: (./asap7sc7p5t_SIMPLE_RVT_TT_08302018.v,199): CON
+
+  FAx1_ASAP7_75t_R U380 ( .A(n335), .B(n333), .CI(n255), .SN(
+                      |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,520|22): 1 output port was not connected:
+ncelab: (./asap7sc7p5t_SIMPLE_RVT_TT_08302018.v,199): CON
+
+  FAx1_ASAP7_75t_R U383 ( .A(In_IFM[28]), .B(n330), .CI(n257), .SN(
+                      |
+ncelab: *W,CUVWSP (../02_SYN/Netlist/Convolution_SYN.v,525|22): 1 output port was not connected:
+ncelab: (./asap7sc7p5t_SIMPLE_RVT_TT_08302018.v,199): CON
+
+	Top level design units:
+		TESTBED
+		DFFHQNx3_ASAP7_75t_R
+		DFFLQNx1_ASAP7_75t_R
+		DFFLQNx2_ASAP7_75t_R
+		DFFLQNx3_ASAP7_75t_R
+		DFFLQx4_ASAP7_75t_R
+		DHLx1_ASAP7_75t_R
+		DHLx2_ASAP7_75t_R
+		DHLx3_ASAP7_75t_R
+		DLLx1_ASAP7_75t_R
+		DLLx2_ASAP7_75t_R
+		DLLx3_ASAP7_75t_R
+		ICGx1_ASAP7_75t_R
+		ICGx2_ASAP7_75t_R
+		SDFHx1_ASAP7_75t_R
+		SDFHx2_ASAP7_75t_R
+		SDFHx3_ASAP7_75t_R
+		SDFHx4_ASAP7_75t_R
+		SDFLx1_ASAP7_75t_R
+		SDFLx2_ASAP7_75t_R
+		SDFLx3_ASAP7_75t_R
+		SDFLx4_ASAP7_75t_R
+		BUFx10_ASAP7_75t_R
+		BUFx12_ASAP7_75t_R
+		BUFx12f_ASAP7_75t_R
+		BUFx16f_ASAP7_75t_R
+		BUFx24_ASAP7_75t_R
+		BUFx3_ASAP7_75t_R
+		BUFx4_ASAP7_75t_R
+		BUFx4f_ASAP7_75t_R
+		BUFx5_ASAP7_75t_R
+		BUFx6f_ASAP7_75t_R
+		BUFx8_ASAP7_75t_R
+		HB2xp67_ASAP7_75t_R
+		HB3xp67_ASAP7_75t_R
+		HB4xp67_ASAP7_75t_R
+		INVx11_ASAP7_75t_R
+		INVx13_ASAP7_75t_R
+		INVx3_ASAP7_75t_R
+		INVx4_ASAP7_75t_R
+		INVx5_ASAP7_75t_R
+		INVx6_ASAP7_75t_R
+		INVx8_ASAP7_75t_R
+ncelab: *W,CUSFNF: The SDF file "Convolution_SYN.sdf" not found..
+        $sdf_annotate("Convolution_SYN.sdf",u_Convolution);   	
+                    |
+ncelab: *W,CUSSTI (../00_TESTBED/TESTBED.v,24|20): This SDF System Task will be Ignored..
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		asap7sc7p5t_SIMPLE_RVT_TT_08302018.XNOR2x1_ASAP7_75t_R:v <0x1234f182>
+			streams:   0, words:     0
+		asap7sc7p5t_SIMPLE_RVT_TT_08302018.XOR2x2_ASAP7_75t_R:v <0x447594ee>
+			streams:   0, words:     0
+		worklib.Convolution:v <0x1fbc3858>
+			streams:   0, words:     0
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                  822      87
+		UDPs:                     125      14
+		Primitives:              2575       4
+		Timing outputs:           853      46
+		Registers:                187     160
+		Scalar wires:            1015       -
+		Expanded wires:            32       1
+		Always blocks:              2       2
+		Initial blocks:             8       8
+		Timing checks:            897       -
+		Delayed tcheck signals:   159     110
+		Simulation timescale:     1ps
+	Writing initial simulation snapshot: worklib.TESTBED:v
+Loading snapshot worklib.TESTBED:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/INCISIVE_15.20.084/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_P-2019.06, Linux x86_64/64bit, 05/26/2019
+(C) 1996 - 2019 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'Convolution_SYN.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : Enable +mda dumping.
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@8OOOOOOO8@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@O               .o8@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@8:.                   .o@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@o                         :O@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                           .o8@@@@@@@
+@@@@@@@@@@@@@@@@@@888888@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@88888888OOO88@@@@@@@@@@                             :@@@@@@@
+@@@@@@@@@@@@8o:.          .o8@@@@@@@@@@@@@@@@@@@88Oo:.                      .:ooo                              o@@@@@@
+@@@@@@@@@@8                  .8@@@@@@@@@@@@8O:.           ..::::::ooo:.                                        .8@@@@@
+@@@@@@@O.                      8@@@@@8O:.        .:O88@@@@@@@@@@@@@@@@@@@@@@@88Oo.                             :8@@@@@
+@@@@@@o                        :8@@8.      .:o8@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@OO:                         o@@@@@@
+@@@@@8                          :o.     .O8@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@88@@8o.                      8@@@@@@
+@@@@:                               o8@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@8:          :OO.                  o@@@@@8@
+@@@o.                             :O@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.              OO:              :8@@@@@@@@
+@@8.                           O8@@@@@@@@@@O:.    .oO@@@@@@@@@@@@@@@@@@@@@@@.                o88          O@@@@@@@@@@@
+@@O.                         :O@@@@@@@@@@:           o@@@@@@@@@@@@@@@@@@@@@@.                 .88o.     oO@@@@@@@@@@@@
+@@O.                       :8@@@@@@@@@@8:            .O@@@@@@@@@@@@@@@@@@@@@o                  .@@8O:   o8@@@@@8@@@@@@
+@@@:                      8@@@@@@@@@@O.               :8@@@@@@@@@@@@@@@@@@@@8o                  O@@@@.    8@@@@@@@@@8@
+@@@@o                    :@@@@@@@@@@o                 :8@@@@@@@@@@@@@@@@@@@@@@o                 O@@@@O:   .O@@@@@@@@@@
+@@@@@@.                .O@@@@@@@@@@8                  O@@@@@@@@@@@@@@@@@@@@@@@@@O             .O@@@@@@@@o   :@@@@@@@@@
+@@@@@@@O:.           .O@@@@@@@@@@@@o                 .8@@@@@@@@@@@@888O8@@@@@@@@@o.         .o8@@@@@@@@@@o   o8@@@@@@@
+@@@@@@@@@@8.         o@@@@@@@@@@@@@:                 o@@@@@@@O:.         :O@@@@@@@@Oo.   .:8@@@@@@@@@@@@@8     @@@@@@@
+@@@@@@@@@@@@@@@@:    8@@@@@@@@@@@@@8               :8@@@@8:              .O@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     @@@@@@
+@@@@@@@@@@@@@@@@    :@@@@@@@@@@@@@@@O.             8@@@@@8:              o@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@8@@@    @@@@@@
+@@@@@@@@@@@@@@@O   :@@@@@@@@@@@@@@@@@@@8O:....:O8@@@@@@@@@@@o          O@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@8@@@@    @@@@@
+@@@@@@@@@@@@@@8:  :O@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@Oo.    .o8@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@    @@@@
+@@@@@@@@@@@@@8:   o@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@8  :@@@@@@@@@@@@@@@@@@@@@@@8Ooo[0;40;31m:::::[0;40;37moOO8@@8OOo   o@@@
+@@@@@@@@@@@@@O   O@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@8. .8@@8o:O@@@@@@@@@@@@@8O[0;40;31m:::::::::::::::[0;40;37mO@@@O   :@@@
+@@@@@@@@@@@@@O   O@@@@@@@@@@@@@@@@@@88888@@@@@@@@@@@@@@@@@@O:oO8@8.  .:    o@@@@@@@@@@@@O[0;40;31m::::::::::::::::::[0;40;37mo8@O   :8@@
+@@@@@@@@@@@@@O   O@@@@@@@@@@@@@[1;40;31mO[0;40;31m:::::::::::::[0;40;37mo8@@@@@@@@@@@@8.              :@@@@@@@@@@8o[0;40;31m::::::::::::::::::::[0;40;37mo8@:   .@@
+@@@@@@@@@@@@O.  .8@@@@@@@@@@8Oo[0;40;31m.:::::::::::::::[0;40;37moO@@@@@@@@@@8:              .@@@@@@@@@@O[0;40;31m::::::::::::::::::::::[0;40;37mo8O    @@
+@@@@@@@@@@@@o   O@@@@@@@@@@8o[0;40;31m::::::::::::::::::::[0;40;37mo8@@@@@@@@@O              .@@@@@@@@@@O[0;40;31m::::::::::::::::::::::[0;40;37mo8O    @@
+@@@@@@@@@@@@O.  :8@@@@@@@@o[0;40;31m::::::::::::::::::::::::[0;40;37m8@@@@@@@@@              :@@@@@@@@@@8o[0;40;31m:::::::::::::::::::::[0;40;37mO@o    @@
+@@@@@@@@@@@@8:  :8@@@@@@@8[0;40;31m:::::::::::::::::::::::::[0;40;37m8@@@@@@@@@              O@@@@@@@@@@@O[0;40;31m::::::::::::::::::::[0;40;37mo8@:   :@@
+@@@@@@@@@@@@@O   O@@@@@@8O[0;40;31m:::::::::::::::::::::::::[0;40;37mo8@@@@@@@@O           .8@@@@@@@@@@@@@8o[0;40;31m::::::::::::::::[0;40;37mo8@@@   .O@@
+@@@@@@@@@@@@@O   O8@@@@@8O[0;40;31m:::::::::::::::::::::::::[0;40;37mo8@@@@@@@@@8:       .O@@@@@@@@@@@@@@@@@O[0;40;31m::::::::::::::[0;40;37mo@@@@8   .8@@
+@@@@@@@@@@@@@O   O@@@@@@@O[0;40;31m::::::::::::::::::::::::.[0;40;37mO8@@@@8OOooo:.     :@@@@@@@@@@@@@@@@@@@@8OOo[0;40;31m::::::[0;40;37mooO8@@@@@o   :@@@
+@@@@@@@@@@@@@8.  o8@@@@@@@[0;40;31m:::::::::::::::::::::::::[0;40;37m8@8O.                  .:O8@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@8o   o@@@@
+@@@@@@@@@@@@@8:  .O@@@@@@@O[0;40;31m:::::::::::::::::::::::[0;40;37mo@O.    .:oOOOo::.           .:OO8@@@@@@@@@@@@@@@@@@@@@@@@O.  :8@@@@
+@@@@@@@@@@@@@@8.  :8@@@@@@@8o[0;40;31m:::::::::::::::::::[0;40;37mO8@O    8@@@@@@@@@@@@@@@@@8O..         :oO8@@@@@@@@@@@@@@@8o.  .8@@@@@
+@@@@@@@@@@@@@@@O   :8@@@@@@@@8O[0;40;31m:::::::::::::::[0;40;37mO8@@@:   .@@@@@@@@@@@@@@@@@@@@@@88Oo:.       .:O8@@@@@@@@@@@.    O@@@@@@
+@@@@@@@@@@@@@@@8    O@@@@@@@@@@8Oo[0;40;31m::::::::[0;40;37mooO8@@@@@O.   O@@@@@@@@@@@@@@@@@@@@@@@@@@@@8:.      .o@@@@@@@@@o    O@@@@@@@
+@@@@@@@@@@@@@@@@o    8@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@8:    :O8@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@o.    :O@@@8o.  .o@@@@@@@@@
+@@@@@@@@@@@@@@@@@:    :8@@@@@@@@@@@@@@@@@@@@@@@@@@@@@8:      ...:oO8@@@@@@@@@@@@@@@@@@@@@@@@@O:   .O8.    .O@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@O:    :@@@@@@@@@@@@@@@@@@@@@@@@@@@O.   [0;40;33m...[0;40;37m          O@@@@@@@@@@@@@@@@@@@@@@@O       .O8@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@:    :O@@@@@@@@@@@@@@@@@@@@@@@@@O   [0;40;33m:O888Ooo:..[0;40;37m    :8@@@@@@@@@@@@@@@@@@@@O:     :O@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@8o     .O8@@@@@@@@@@@@@@@@@@@@@O:  [0;40;33m.o8888888888O.[0;40;37m  .O@@@@@@@@@@@OO888@8O:.    :O@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@O        o8@@@@@@@@@@@@@@@@@@@o   [0;40;33m:88888888888o[0;40;37m   o8@@@@@@@:              o8@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@:          .:88@@@@@@@@@@@@@8:   [0;40;33mo8888O88888O.[0;40;37m  .8@@@@@@@O    [1;40;33m..[0;40;37m     .::O@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@O.                  .:o          [0;40;33m8888[0;40;37m@@@@[0;40;33m888o.[0;40;37m  o8@@@@@8o   [0;40;33mo88o.[0;40;37m   @@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@o        .OOo:.                 [0;40;33mO88[0;40;37m@@@@@[0;40;33m888o.[0;40;37m  :8@@@@@o   [0;40;33m:O88.[0;40;37m   .@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@8o         :@@@@@O:             [0;40;33m.O8[0;40;37m@@@@[0;40;33m8888O:[0;40;37m   .O88O:   [0;40;33m.O88O[0;40;37m    O@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@:                             [0;40;33m.o8[0;40;37m@@@@[0;40;33m[0;40;33m888888O:[0;40;37m         [0;40;33m.888O:[0;40;37m   o8@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@8o                            [0;40;33m.O[0;40;37m@@@@[0;40;33m888888888Oo:...ooO8888:   [0;40;37m:8@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@8o                         [0;40;33mo8[0;40;37m@@@@[0;40;33m888888888888888888888O.[0;40;37m  :8@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@o.                      [0;40;33m.8[0;40;37m@@@@[0;40;33m888888888888888888888O:[0;40;37m   o@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@O:.                 [0;40;33m.o8[0;40;37m@@@@@[0;40;33m88888888888888888888Oo[0;40;37m   :8@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@8OOo::::::.   [0;40;33mo888[0;40;37m@@@@@[0;40;33m88888888888888888888o.[0;40;37m   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@8:   [0;40;33mo888[0;40;37m@@@@@[0;40;33m88888888888888888888.[0;40;37m   .@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@8:   [0;40;33mo888[0;40;37m@@@@@[0;40;33m88888888888888888888O[0;40;37m   .O@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@O.   [0;40;33mO8888[0;40;37m@@@[0;40;33m88888888888888888888O.[0;40;37m   O@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@o    [0;40;33m8888888888888888888888888888o[0;40;37m   o8@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.    [0;40;33m. ..:oOO8888888888888888888o.[0;40;37m  .8@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@O.           [0;40;33m..:oO8888888888888O.[0;40;37m  .O@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@8OO.             [0;40;33m.oOO88O.[0;40;37m   O@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@88:..          [0;40;33m...[0;40;37m    8@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@88Ooo:.          @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@8OoOO@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+----------------------------------------------------------------------------------------------------------------------
+                                                  Congratulations!                						            
+                                           You have passed all patterns!          						            
+----------------------------------------------------------------------------------------------------------------------
+Simulation complete via $finish(1) at time 224 NS + 0
+../00_TESTBED/PATTERN.v:437 $finish;	
+ncsim> exit
+TOOL:	irun(64)	15.20-s084: Exiting on Jan 19, 2024 at 16:03:15 CST  (total: 00:00:02)

@@ -1,0 +1,3 @@
+Command Line: /usr/cad/synopsys/verdi/2019.06/platform/LINUXAMD64/bin/Novas -nWave Convolution_SYN.fsdb
+uname(Linux ee21 3.10.0-1160.88.1.el7.x86_64 #1 SMP Tue Mar 7 15:41:52 UTC 2023 x86_64)
+au time 45707.302486 211.845390 492.486698 delta 325697536 325697536 total 760750080 760750080

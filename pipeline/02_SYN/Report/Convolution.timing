@@ -1,0 +1,74 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Convolution
+Version: T-2022.03
+Date   : Fri Jan 19 16:03:09 2024
+****************************************
+
+Operating Conditions: PVT_0P7V_25C   Library: asap7sc7p5t_INVBUF_RVT_TT_08302018
+Wire Load Model Mode: top
+
+  Startpoint: stage2_reg[1][1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Out_OFM_reg[7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  stage2_reg[1][1]/CLK (DFFHQNx1_ASAP7_75t_R)             0.00       0.00 r
+  stage2_reg[1][1]/QN (DFFHQNx1_ASAP7_75t_R)             48.63      48.63 f
+  add_93/B[1] (Convolution_DW01_add_39)                   0.00      48.63 f
+  add_93/U102/Y (NOR2x1_ASAP7_75t_R)                     15.30      63.94 r
+  add_93/U106/Y (INVx1_ASAP7_75t_R)                       7.89      71.83 f
+  add_93/U54/Y (NAND2xp5_ASAP7_75t_R)                    11.27      83.09 r
+  add_93/U101/Y (XOR2xp5_ASAP7_75t_R)                    26.26     109.35 r
+  add_93/SUM[1] (Convolution_DW01_add_39)                 0.00     109.35 r
+  add_93_3/A[1] (Convolution_DW01_add_41)                 0.00     109.35 r
+  add_93_3/U120/Y (NOR2xp67_ASAP7_75t_R)                 16.47     125.83 f
+  add_93_3/U89/Y (NOR2xp67_ASAP7_75t_R)                  12.82     138.65 r
+  add_93_3/U77/Y (NOR2xp33_ASAP7_75t_R)                  13.63     152.28 f
+  add_93_3/U123/Y (OR2x2_ASAP7_75t_R)                    24.72     177.00 f
+  add_93_3/U110/Y (NAND2xp5_ASAP7_75t_R)                  9.04     186.05 r
+  add_93_3/U109/Y (AND2x2_ASAP7_75t_R)                   18.55     204.60 r
+  add_93_3/U95/Y (NOR2xp33_ASAP7_75t_R)                  14.46     219.05 f
+  add_93_3/U91/Y (XOR2xp5_ASAP7_75t_R)                   22.85     241.91 f
+  add_93_3/SUM[4] (Convolution_DW01_add_41)               0.00     241.91 f
+  U73/Y (NAND2xp33_ASAP7_75t_R)                          16.34     258.24 r
+  U125/Y (NAND4xp25_ASAP7_75t_R)                         24.36     282.61 f
+  add_93_4/B[4] (Convolution_DW01_add_38)                 0.00     282.61 f
+  add_93_4/U154/Y (NAND2xp33_ASAP7_75t_R)                23.81     306.41 r
+  add_93_4/U225/Y (INVx1_ASAP7_75t_R)                    12.89     319.30 f
+  add_93_4/U146/Y (NOR2x1_ASAP7_75t_R)                   11.59     330.89 r
+  add_93_4/U233/Y (OR2x2_ASAP7_75t_R)                    19.55     350.44 r
+  add_93_4/U211/Y (NAND2x1p5_ASAP7_75t_R)                 8.46     358.90 f
+  add_93_4/U175/Y (HB1xp67_ASAP7_75t_R)                  19.91     378.81 f
+  add_93_4/U216/Y (NAND2xp33_ASAP7_75t_R)                13.56     392.37 r
+  add_93_4/U205/Y (AND2x2_ASAP7_75t_R)                   22.22     414.59 r
+  add_93_4/U133/Y (XNOR2xp5_ASAP7_75t_R)                 12.60     427.20 f
+  add_93_4/SUM[7] (Convolution_DW01_add_38)               0.00     427.20 f
+  U170/Y (INVx1_ASAP7_75t_R)                              8.56     435.76 r
+  Out_OFM_reg[7]/D (DFFHQNx2_ASAP7_75t_R)                 0.00     435.76 r
+  data arrival time                                                435.76
+
+  clock clk (rise edge)                                 449.00     449.00
+  clock network delay (ideal)                             0.00     449.00
+  Out_OFM_reg[7]/CLK (DFFHQNx2_ASAP7_75t_R)               0.00     449.00 r
+  library setup time                                    -13.10     435.90
+  data required time                                               435.90
+  --------------------------------------------------------------------------
+  data required time                                               435.90
+  data arrival time                                               -435.76
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+1

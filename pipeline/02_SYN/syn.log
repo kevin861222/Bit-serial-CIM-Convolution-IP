@@ -1,0 +1,535 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+                 Version T-2022.03 for linux64 - Feb 22, 2022 
+
+                    Copyright (c) 1988 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+#======================================================
+#
+# Synopsys Synthesis Scripts (Design Vision dctcl mode)
+#
+#======================================================
+#======================================================
+#  Set Libraries
+#======================================================
+set search_path { ./ ../01_RTL ~/dic/NLDM}
+ ./ ../01_RTL ~/dic/NLDM
+set synthetic_library {dw_foundation.sldb}
+dw_foundation.sldb
+set link_library {* dw_foundation.sldb standard.sldb asap7sc7p5t_AO_RVT_TT_08302018.db asap7sc7p5t_OA_RVT_TT_08302018.db asap7sc7p5t_INVBUF_RVT_TT_08302018.db asap7sc7p5t_SEQ_RVT_TT_08302018.db asap7sc7p5t_SIMPLE_RVT_TT_08302018.db asap7sc7p5t_AO_RVT_TT_08302018.db  asap7sc7p5t_OA_RVT_TT_08302018.db}
+* dw_foundation.sldb standard.sldb asap7sc7p5t_AO_RVT_TT_08302018.db asap7sc7p5t_OA_RVT_TT_08302018.db asap7sc7p5t_INVBUF_RVT_TT_08302018.db asap7sc7p5t_SEQ_RVT_TT_08302018.db asap7sc7p5t_SIMPLE_RVT_TT_08302018.db asap7sc7p5t_AO_RVT_TT_08302018.db  asap7sc7p5t_OA_RVT_TT_08302018.db
+set target_library {asap7sc7p5t_INVBUF_RVT_TT_08302018.db asap7sc7p5t_SIMPLE_RVT_TT_08302018.db asap7sc7p5t_SEQ_RVT_TT_08302018.db} 
+asap7sc7p5t_INVBUF_RVT_TT_08302018.db asap7sc7p5t_SIMPLE_RVT_TT_08302018.db asap7sc7p5t_SEQ_RVT_TT_08302018.db
+# set search_path {	./../01_RTL \
+# 			/usr/cad/arm/CBDK_TSMC018_Arm_f1.0/CIC/SynopsysDC/db/ \
+# 			/usr/cad/synopsys/synthesis/2019.12/libraries/syn/ }
+# 				   
+# set synthetic_library {dw_foundation.sldb}
+# set link_library {* dw_foundation.sldb standard.sldb slow.db}
+# set target_library {slow.db}
+#======================================================
+#  Global Parameters
+#======================================================
+set DESIGN "Convolution"
+Convolution
+set CLK_period 449.0
+449.0
+set IN_DLY  [expr 0.5*$CLK_period]
+224.5
+set OUT_DLY [expr 0.5*$CLK_period]
+224.5
+#======================================================
+#  Read RTL Code
+#======================================================
+analyze -f sverilog $DESIGN\.v 
+Running PRESTO HDLC
+Compiling source file ../01_RTL/Convolution.v
+Presto compilation completed successfully.
+Loading db file '/usr/cad/synopsys/synthesis/2022.03/libraries/syn/dw_foundation.sldb'
+Loading db file '/usr/cad/synopsys/synthesis/2022.03/libraries/syn/standard.sldb'
+Loading db file '/RAID2/COURSE/dic/dic107/DICFP/serial_pipeline_h/02_SYN/asap7sc7p5t_AO_RVT_TT_08302018.db'
+Loading db file '/RAID2/COURSE/dic/dic107/DICFP/serial_pipeline_h/02_SYN/asap7sc7p5t_OA_RVT_TT_08302018.db'
+Loading db file '/RAID2/COURSE/dic/dic107/DICFP/serial_pipeline_h/02_SYN/asap7sc7p5t_INVBUF_RVT_TT_08302018.db'
+Loading db file '/RAID2/COURSE/dic/dic107/DICFP/serial_pipeline_h/02_SYN/asap7sc7p5t_SEQ_RVT_TT_08302018.db'
+Loading db file '/RAID2/COURSE/dic/dic107/DICFP/serial_pipeline_h/02_SYN/asap7sc7p5t_SIMPLE_RVT_TT_08302018.db'
+1
+elaborate $DESIGN 
+Loading db file '/usr/cad/synopsys/synthesis/2022.03/libraries/syn/gtech.db'
+  Loading link library 'asap7sc7p5t_AO_RVT_TT_08302018'
+  Loading link library 'asap7sc7p5t_OA_RVT_TT_08302018'
+  Loading link library 'asap7sc7p5t_INVBUF_RVT_TT_08302018'
+  Loading link library 'asap7sc7p5t_SEQ_RVT_TT_08302018'
+  Loading link library 'asap7sc7p5t_SIMPLE_RVT_TT_08302018'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine Convolution line 55 in file
+		'../01_RTL/Convolution.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| state1_counter_reg  | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine Convolution line 63 in file
+		'../01_RTL/Convolution.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| state2_counter_reg  | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine Convolution line 67 in file
+		'../01_RTL/Convolution.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    out_valid_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine Convolution line 85 in file
+		'../01_RTL/Convolution.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     stage2_reg      | Flip-flop |  28   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine Convolution line 92 in file
+		'../01_RTL/Convolution.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     Out_OFM_reg     | Flip-flop |  13   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (Convolution)
+Elaborated 1 design.
+Current design is now 'Convolution'.
+1
+#======================================================
+#  Set Design Constraints
+#======================================================
+create_clock -name "clk" -period $CLK_period clk 
+1
+set_input_delay  [ expr $CLK_period*0 ] -clock clk [all_inputs]
+1
+set_output_delay [ expr $CLK_period*0 ] -clock clk [all_outputs]
+1
+set_input_delay 0 -clock clk clk
+1
+set_input_delay 0 -clock clk rst_n
+1
+# set_input_delay 0 -clock clk cg_en
+set_load 0.05 [all_outputs]
+1
+set_max_delay $CLK_period -from [all_inputs] -to [all_outputs]
+1
+# set_dont_use slow/JKFF*
+#======================================================
+#  Optimization
+#======================================================
+uniquify
+1
+check_design > Report/$DESIGN\.check
+set_fix_multiple_port_nets -all -buffer_constants
+1
+set_fix_hold [all_clocks]
+1
+compile
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | S-2021.06-DWBB_202106.0 |     *     |
+| Licensed DW Building Blocks        | S-2021.06-DWBB_202106.0 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler                                                                   |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 238                                    |
+| Number of User Hierarchies                              | 0                                      |
+| Sequential Cell Count                                   | 47                                     |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch cells                              | 1                                      |
+| Number of Dont Touch nets                               | 0                                      |
+| Number of size only cells                               | 1                                      |
+| Design with UPF Data                                    | false                                  |
+----------------------------------------------------------------------------------------------------
+| Variables                                               | Value                                  |
+----------------------------------------------------------------------------------------------------
+| set_fix_multiple_port_nets                              | -all -buffer_constants                 |
+====================================================================================================
+
+Information: There are 1 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'Convolution'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Building model 'DW01_NAND2'
+  Processing 'DW01_NAND2'
+  Building model 'DW01_add_width5' (rpl)
+  Processing 'DW01_add_width5'
+  Building model 'DW01_add_width7' (rpl)
+  Processing 'DW01_add_width7'
+  Building model 'DW01_add_width6' (rpl)
+  Processing 'DW01_add_width6'
+  Building model 'DW01_add_width8' (rpl)
+  Processing 'DW01_add_width8'
+  Building model 'DW01_add_width9' (rpl)
+  Processing 'DW01_add_width9'
+  Building model 'DW01_add_width13' (rpl)
+  Processing 'DW01_add_width13'
+  Processing 'Convolution_DW01_add_0'
+  Processing 'Convolution_DW01_add_1'
+  Processing 'Convolution_DW01_add_2'
+  Processing 'Convolution_DW01_add_3'
+  Processing 'Convolution_DW01_add_4'
+  Processing 'Convolution_DW01_add_5'
+  Processing 'Convolution_DW01_add_6'
+  Processing 'Convolution_DW01_add_7'
+  Processing 'Convolution_DW01_add_8'
+  Processing 'Convolution_DW01_add_9'
+  Processing 'Convolution_DW01_add_10'
+  Processing 'Convolution_DW01_add_11'
+  Processing 'Convolution_DW01_add_12'
+  Processing 'Convolution_DW01_add_13'
+  Processing 'Convolution_DW01_add_14'
+  Processing 'Convolution_DW01_add_15'
+  Processing 'Convolution_DW01_add_16'
+  Processing 'Convolution_DW01_add_17'
+  Processing 'Convolution_DW01_add_18'
+  Processing 'Convolution_DW01_add_19'
+  Processing 'Convolution_DW01_add_20'
+  Processing 'Convolution_DW01_add_21'
+  Processing 'Convolution_DW01_add_22'
+  Processing 'Convolution_DW01_add_23'
+  Processing 'Convolution_DW01_add_24'
+  Processing 'Convolution_DW01_add_25'
+  Processing 'Convolution_DW01_add_26'
+  Processing 'Convolution_DW01_add_27'
+  Processing 'Convolution_DW01_add_28'
+  Mapping 'DW_leftsh'
+Information: Added key list 'DesignWare' to design 'dp_cluster_4_5'. (DDB-72)
+  Processing 'Convolution_DW01_add_29'
+  Processing 'Convolution_DW01_add_30'
+  Processing 'Convolution_DW01_add_31'
+Information: Added key list 'DesignWare' to design 'Convolution'. (DDB-72)
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+LNC WARNING: Found output_to_output lib arc on HAxp5_ASAP7_75t_R.
+  Mapping Optimization (Phase 1)
+Information: The register 'stage2_reg[2][6]' is a constant and will be removed. (OPT-1206)
+
+                                  TOTAL                                                  
+   ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
+  --------- --------- --------- --------- --------- ------------------------- -----------
+    0:00:02    1184.1     31.83     147.6       0.0                                0.00  
+    0:00:02    1185.1     34.53     154.4       0.0                                0.00  
+    0:00:02    1185.1     34.53     154.4       0.0                                0.00  
+    0:00:02    1185.1     34.53     154.4       0.0                                0.00  
+    0:00:02    1185.1     34.53     154.4       0.0                                0.00  
+    0:00:02    1112.7    187.75    1472.1       0.0                                0.00  
+    0:00:02    1123.5     57.56     228.2       0.0                                0.00  
+    0:00:02    1107.4     79.03     381.5       0.0                                0.00  
+    0:00:02    1112.7     54.20     292.7       0.0                                0.00  
+    0:00:02    1113.0     38.33     194.8       0.0                                0.00  
+    0:00:02    1112.5     64.01     324.0       0.0                                0.00  
+    0:00:02    1114.8     36.56     185.8       0.0                                0.00  
+    0:00:02    1115.1     31.55     186.4       0.0                                0.00  
+    0:00:02    1116.5     32.45     205.6       0.0                                0.00  
+    0:00:02    1117.9     32.01     201.5       0.0                                0.00  
+    0:00:03    1119.7     29.74     186.5       0.0                                0.00  
+    0:00:03    1118.6     30.56     182.1       0.0                                0.00  
+    0:00:03    1117.9     28.60     181.1       0.0                                0.00  
+    0:00:03    1117.9     26.76     171.3       0.0                                0.00  
+    0:00:03    1125.1     24.32     150.6       0.0                                0.00  
+    0:00:03    1126.5     21.86     129.7       0.0                                0.00  
+    0:00:03    1129.3     17.08     112.1       0.0                                0.00  
+    0:00:03    1129.3     16.21      97.9       0.0                                0.00  
+    0:00:03    1128.1     15.35      82.7       0.0                                0.00  
+    0:00:03    1128.1     15.35      82.7       0.0                                0.00  
+    0:00:03    1128.1     15.35      82.7       0.0                                0.00  
+    0:00:03    1128.1     15.35      82.7       0.0                                0.00  
+    0:00:03    1128.1     15.35      82.7       0.0                                0.00  
+    0:00:03    1128.1     15.35      82.7       0.0                                0.00  
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                  
+   ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
+  --------- --------- --------- --------- --------- ------------------------- -----------
+    0:00:03    1128.1     15.35      82.7       0.0                                0.00  
+    0:00:03    1129.1     11.52      66.3       0.0 Out_OFM_reg[11]/D              0.00  
+    0:00:03    1130.5      9.70      59.9       0.0 Out_OFM_reg[11]/D              0.00  
+    0:00:03    1131.6      6.93      40.8       0.0 Out_OFM_reg[10]/D              0.00  
+    0:00:03    1133.7      5.24      25.3       0.0 Out_OFM_reg[11]/D              0.00  
+    0:00:03    1137.7      3.49      20.4       0.0 Out_OFM_reg[11]/D              0.00  
+    0:00:03    1137.7      3.24      19.9       0.0 Out_OFM_reg[10]/D              0.00  
+    0:00:03    1140.3      3.00      15.9       0.0 Out_OFM_reg[11]/D              0.00  
+    0:00:03    1142.4      1.91       8.0       0.0 Out_OFM_reg[7]/D               0.00  
+    0:00:03    1142.8      0.45       0.4       0.0 Out_OFM_reg[12]/D              0.00  
+    0:00:03    1144.0      0.00       0.0       0.0                                0.00  
+    0:00:03    1141.9      0.00       0.0       0.0                                0.00  
+
+
+  Beginning Design Rule Fixing  (min_path)
+  ----------------------------
+
+                                  TOTAL                                                  
+   ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
+  --------- --------- --------- --------- --------- ------------------------- -----------
+    0:00:03    1141.9      0.00       0.0       0.0                               -0.26  
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                                  
+   ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
+  --------- --------- --------- --------- --------- ------------------------- -----------
+    0:00:03    1141.9      0.00       0.0       0.0                               -0.26  
+    0:00:03    1141.9      0.00       0.0       0.0                               -0.26  
+    0:00:03    1132.3      0.04       0.0       0.0                               -0.26  
+    0:00:03    1131.9      0.04       0.0       0.0                               -0.26  
+    0:00:03    1131.9      0.04       0.0       0.0                               -0.26  
+    0:00:03    1131.9      0.04       0.0       0.0                               -0.26  
+    0:00:03    1131.9      0.01       0.0       0.0                               -0.26  
+    0:00:03    1132.1      0.00       0.0       0.0                               -0.26  
+    0:00:03    1120.7      2.14       9.6       0.0                               -0.26  
+    0:00:03    1119.3      2.14       9.6       0.0                               -0.26  
+    0:00:03    1119.3      2.14       9.6       0.0                               -0.26  
+    0:00:03    1119.3      2.14       9.6       0.0                               -0.26  
+    0:00:03    1119.3      2.14       9.6       0.0                               -0.26  
+    0:00:03    1119.3      2.14       9.6       0.0                               -0.26  
+    0:00:03    1119.3      2.14       9.6       0.0                               -0.26  
+    0:00:03    1112.3      0.00       0.0       0.0                                0.00  
+Loading db file '/RAID2/COURSE/dic/dic107/DICFP/serial_pipeline_h/02_SYN/asap7sc7p5t_AO_RVT_TT_08302018.db'
+Loading db file '/RAID2/COURSE/dic/dic107/DICFP/serial_pipeline_h/02_SYN/asap7sc7p5t_OA_RVT_TT_08302018.db'
+Loading db file '/RAID2/COURSE/dic/dic107/DICFP/serial_pipeline_h/02_SYN/asap7sc7p5t_INVBUF_RVT_TT_08302018.db'
+Loading db file '/RAID2/COURSE/dic/dic107/DICFP/serial_pipeline_h/02_SYN/asap7sc7p5t_SEQ_RVT_TT_08302018.db'
+Loading db file '/RAID2/COURSE/dic/dic107/DICFP/serial_pipeline_h/02_SYN/asap7sc7p5t_SIMPLE_RVT_TT_08302018.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1
+#======================================================
+#  Output Reports 
+#======================================================
+report_timing >  Report/$DESIGN\.timing
+report_area >  Report/$DESIGN\.area
+report_resource >  Report/$DESIGN\.resource
+#======================================================
+#  Change Naming Rule
+#======================================================
+set bus_inference_style "%s\[%d\]"
+%s[%d]
+set bus_naming_style "%s\[%d\]"
+%s[%d]
+set hdlout_internal_busses true
+true
+change_names -hierarchy -rule verilog
+1
+define_name_rules name_rule -allowed "a-z A-Z 0-9 _" -max_length 255 -type cell
+1
+define_name_rules name_rule -allowed "a-z A-Z 0-9 _[]" -max_length 255 -type net
+1
+define_name_rules name_rule -map {{"\\*cell\\*" "cell"}}
+1
+change_names -hierarchy -rules name_rule
+1
+#======================================================
+#  Output Results
+#======================================================
+set verilogout_higher_designs_first true
+true
+write -format verilog -output Netlist/$DESIGN\_SYN.v -hierarchy
+Writing verilog file '/RAID2/COURSE/dic/dic107/DICFP/serial_pipeline_h/02_SYN/Netlist/Convolution_SYN.v'.
+1
+# set_annotated_delay 0 -cell -to [get_pins -filter "pin_direction == out" -of_objects [get_cells "GATED_*/U*" -filter "ref_name==OR2x2_ASAP7_75t_R"]]
+# set_annotated_delay 0 -cell -to [get_pins -filter "pin_direction == out" -of_objects [get_cells "GATED_*/U*" -filter "ref_name==NAND2xp5_ASAP7_75t_R"]]
+# set_annotated_delay 0 -cell -to [get_pins -filter "pin_direction == out" -of_objects [get_cells "GATED_*/U*" -filter "ref_name==INVx1_ASAP7_75t_R"]]
+write_sdf -version 3.0 -context verilog -load_delay cell Netlist/$DESIGN\_SYN.sdf -significant_digits 6
+Information: Writing timing information to file '/RAID2/COURSE/dic/dic107/DICFP/serial_pipeline_h/02_SYN/Netlist/Convolution_SYN.sdf'. (WT-3)
+1
+write_sdc Netlist/$DESIGN\_SYN.sdc
+1
+#======================================================
+#  Finish and Quit
+#======================================================
+report_area
+ 
+****************************************
+Report : area
+Design : Convolution
+Version: T-2022.03
+Date   : Fri Jan 19 16:03:09 2024
+****************************************
+
+Library(s) Used:
+
+    asap7sc7p5t_INVBUF_RVT_TT_08302018 (File: /RAID2/COURSE/dic/dic107/DICFP/serial_pipeline_h/02_SYN/asap7sc7p5t_INVBUF_RVT_TT_08302018.db)
+    asap7sc7p5t_SIMPLE_RVT_TT_08302018 (File: /RAID2/COURSE/dic/dic107/DICFP/serial_pipeline_h/02_SYN/asap7sc7p5t_SIMPLE_RVT_TT_08302018.db)
+    asap7sc7p5t_SEQ_RVT_TT_08302018 (File: /RAID2/COURSE/dic/dic107/DICFP/serial_pipeline_h/02_SYN/asap7sc7p5t_SEQ_RVT_TT_08302018.db)
+
+Number of ports:                          217
+Number of nets:                           962
+Number of cells:                          777
+Number of combinational cells:            725
+Number of sequential cells:                46
+Number of macros/black boxes:               0
+Number of buf/inv:                        191
+Number of references:                      33
+
+Combinational area:                888.563521
+Buf/Inv area:                      136.002242
+Noncombinational area:             223.715512
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  1112.279034
+Total area:                 undefined
+1
+report_timing
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Convolution
+Version: T-2022.03
+Date   : Fri Jan 19 16:03:09 2024
+****************************************
+
+Operating Conditions: PVT_0P7V_25C   Library: asap7sc7p5t_INVBUF_RVT_TT_08302018
+Wire Load Model Mode: top
+
+  Startpoint: stage2_reg_1__1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Out_OFM_reg_7_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  stage2_reg_1__1_/CLK (DFFHQNx1_ASAP7_75t_R)             0.00       0.00 r
+  stage2_reg_1__1_/QN (DFFHQNx1_ASAP7_75t_R)             48.63      48.63 f
+  add_93/B[1] (Convolution_DW01_add_39)                   0.00      48.63 f
+  add_93/U102/Y (NOR2x1_ASAP7_75t_R)                     15.30      63.94 r
+  add_93/U106/Y (INVx1_ASAP7_75t_R)                       7.89      71.83 f
+  add_93/U54/Y (NAND2xp5_ASAP7_75t_R)                    11.27      83.09 r
+  add_93/U101/Y (XOR2xp5_ASAP7_75t_R)                    26.26     109.35 r
+  add_93/SUM[1] (Convolution_DW01_add_39)                 0.00     109.35 r
+  add_93_3/A[1] (Convolution_DW01_add_41)                 0.00     109.35 r
+  add_93_3/U120/Y (NOR2xp67_ASAP7_75t_R)                 16.47     125.83 f
+  add_93_3/U89/Y (NOR2xp67_ASAP7_75t_R)                  12.82     138.65 r
+  add_93_3/U77/Y (NOR2xp33_ASAP7_75t_R)                  13.63     152.28 f
+  add_93_3/U123/Y (OR2x2_ASAP7_75t_R)                    24.72     177.00 f
+  add_93_3/U110/Y (NAND2xp5_ASAP7_75t_R)                  9.04     186.05 r
+  add_93_3/U109/Y (AND2x2_ASAP7_75t_R)                   18.55     204.60 r
+  add_93_3/U95/Y (NOR2xp33_ASAP7_75t_R)                  14.46     219.05 f
+  add_93_3/U91/Y (XOR2xp5_ASAP7_75t_R)                   22.85     241.91 f
+  add_93_3/SUM[4] (Convolution_DW01_add_41)               0.00     241.91 f
+  U73/Y (NAND2xp33_ASAP7_75t_R)                          16.34     258.24 r
+  U125/Y (NAND4xp25_ASAP7_75t_R)                         24.36     282.61 f
+  add_93_4/B[4] (Convolution_DW01_add_38)                 0.00     282.61 f
+  add_93_4/U154/Y (NAND2xp33_ASAP7_75t_R)                23.81     306.41 r
+  add_93_4/U225/Y (INVx1_ASAP7_75t_R)                    12.89     319.30 f
+  add_93_4/U146/Y (NOR2x1_ASAP7_75t_R)                   11.59     330.89 r
+  add_93_4/U233/Y (OR2x2_ASAP7_75t_R)                    19.55     350.44 r
+  add_93_4/U211/Y (NAND2x1p5_ASAP7_75t_R)                 8.46     358.90 f
+  add_93_4/U175/Y (HB1xp67_ASAP7_75t_R)                  19.91     378.81 f
+  add_93_4/U216/Y (NAND2xp33_ASAP7_75t_R)                13.56     392.37 r
+  add_93_4/U205/Y (AND2x2_ASAP7_75t_R)                   22.22     414.59 r
+  add_93_4/U133/Y (XNOR2xp5_ASAP7_75t_R)                 12.60     427.20 f
+  add_93_4/SUM[7] (Convolution_DW01_add_38)               0.00     427.20 f
+  U170/Y (INVx1_ASAP7_75t_R)                              8.56     435.76 r
+  Out_OFM_reg_7_/D (DFFHQNx2_ASAP7_75t_R)                 0.00     435.76 r
+  data arrival time                                                435.76
+
+  clock clk (rise edge)                                 449.00     449.00
+  clock network delay (ideal)                             0.00     449.00
+  Out_OFM_reg_7_/CLK (DFFHQNx2_ASAP7_75t_R)               0.00     449.00 r
+  library setup time                                    -13.10     435.90
+  data required time                                               435.90
+  --------------------------------------------------------------------------
+  data required time                                               435.90
+  data arrival time                                               -435.76
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+1
+exit
+
+Memory usage for this session 166 Mbytes.
+Memory usage for this session including child processes 166 Mbytes.
+CPU usage for this session 6 seconds ( 0.00 hours ).
+Elapsed time for this session 10 seconds ( 0.00 hours ).
+
+Thank you...
