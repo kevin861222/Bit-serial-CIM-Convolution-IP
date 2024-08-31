@@ -1,0 +1,22 @@
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 \
+           {/RAID2/COURSE/dic/dic107/DICHW5/clk_gating/03_GATE/Convolution_SYN.fsdb}
+wvResizeWindow -win $_nWave1 72 64 893 202
+wvResizeWindow -win $_nWave1 72 64 1848 1034
+wvResizeWindow -win $_nWave1 72 64 893 202
+wvResizeWindow -win $_nWave1 72 64 893 202
+wvResizeWindow -win $_nWave1 72 64 893 202
+wvResizeWindow -win $_nWave1 72 64 1848 1016
+wvResizeWindow -win $_nWave1 72 64 893 202
+wvResizeWindow -win $_nWave1 72 64 1848 1016
+wvResizeWindow -win $_nWave1 72 64 1848 1016
+wvResizeWindow -win $_nWave1 72 64 1848 1016
+wvResizeWindow -win $_nWave1 72 64 893 202
+wvResizeWindow -win $_nWave1 72 64 893 202
+wvResizeWindow -win $_nWave1 72 64 1848 1016
+wvResizeWindow -win $_nWave1 72 64 1848 1034
+wvResizeWindow -win $_nWave1 72 64 1848 1016
+wvResizeWindow -win $_nWave1 72 64 1848 1034
+wvResizeWindow -win $_nWave1 72 64 1848 1016
+wvResizeWindow -win $_nWave1 72 64 893 202
+wvResizeWindow -win $_nWave1 72 64 1652 904
