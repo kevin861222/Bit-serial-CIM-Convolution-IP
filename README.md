@@ -21,6 +21,11 @@
 - 可根據不同神經模型更改 RTL 重新燒錄於 FPGA
 - 此設計能大幅降低帶寬需求
 
+### Report
+[report](bit_serial_conv_report.pdf)
+
  ### note
  遵守 TSRI 保密協議，本專案不開源製程檔案，僅開源 RTL 設計。
+
+
 
