@@ -14,6 +14,7 @@
 
 ### Bit serial
 - Bit serial 的設計具有小體積、小功耗、節省I/O等特性，是硬體資源受限的場景最好選擇。
+- 每個 IP 都能獨立運算，因此具有非常好的拓展性，本專案實現了 4-core 架構。
 - 此特化 IP 發想源自於最小的 RISC-V CPU [SERV](https://github.com/olofk/serv/tree/main)
 
 ### CIM (Computing in Memory)
