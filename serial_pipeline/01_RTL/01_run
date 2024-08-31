@@ -1,1 +1,0 @@
-irun ../00_TESTBED/TESTBED.v  -define RTL -debug  -notimingchecks -loadpli1 debpli:novas_pli_boot -v ../03_GATE/asap7sc7p5t_SEQ_RVT_TT_08302018.v
