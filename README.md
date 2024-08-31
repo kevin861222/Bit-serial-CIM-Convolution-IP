@@ -25,7 +25,7 @@
 ### Report
 [report](bit_serial_conv_report.pdf)
 
- ### note
+ ### Note
  遵守 TSRI 保密協議，本專案不開源製程檔案，僅開源 RTL 設計。
 
 
