@@ -1,4 +1,4 @@
-# bit-serial-CIM-Convolution-IP
+# Bit-serial-CIM-Convolution-IP
 
 ### performance
 - Process: asap7sc7p5t (7nm-FinFET virtual process)
